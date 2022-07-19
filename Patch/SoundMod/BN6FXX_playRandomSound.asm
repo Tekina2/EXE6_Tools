@@ -39,7 +39,7 @@ playRandomSound:
 
 .pool
 virusPlayList:
-  .byte 21, 38, 42, 47, 52, 56, 60, 21, 38, 42, 47, 52, 56, 60, 21, 38  // virus battle songs
+  .byte 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28  // virus battle songs
 
 bossPlayList:
   .byte 22, 34, 39, 43, 45, 48, 50, 53, 57, 61, 62, 22, 34, 39, 43, 45 // boss battle songs
