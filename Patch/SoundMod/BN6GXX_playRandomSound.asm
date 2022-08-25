@@ -1,4 +1,4 @@
-﻿// for BN6GXX
+// for BN6GXX
 .open "BN6GXX_SoundMod.gba", "BN6GXX_SoundMod_asm.gba", 0x08000000
 
 .gba
@@ -39,7 +39,7 @@ playRandomSound:
 
 .pool
 virusPlayList:  // virus play list
-  .byte 22, 39, 42, 44, 46, 50, 53, 56 // virus battle songs
+  .byte 21, 38, 41, 45, 49, 52, 55, 57 // virus battle songs
 
 bossPlayList:
   .byte 22, 39, 42, 44, 46, 50, 53, 56  // boss battle songs
