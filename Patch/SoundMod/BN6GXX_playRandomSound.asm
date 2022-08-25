@@ -11,7 +11,9 @@ playRandomSound:
   bne isBossBattleSong
 
   isVirusSong:
-    ldr r0, =bossPlayList
+    cmp r0, 0x16  // is boss battle song?
+    bne isInternetSong
+    ldr r0, = bossPlayList
     b pickRandomSong
 
   isBossBattleSong:
