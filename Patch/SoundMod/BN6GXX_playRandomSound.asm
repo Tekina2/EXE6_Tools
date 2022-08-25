@@ -11,7 +11,7 @@ playRandomSound:
   bne isBossBattleSong
 
   isVirusSong:
-    ldr r0, =virusPlayList
+    ldr r0, =bossPlayList
     b pickRandomSong
 
   isBossBattleSong:
