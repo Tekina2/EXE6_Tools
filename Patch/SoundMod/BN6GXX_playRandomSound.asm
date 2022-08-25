@@ -11,9 +11,7 @@ playRandomSound:
   bne isBossBattleSong
 
   isVirusSong:
-    cmp r0, 0x16  // is boss battle song?
-    bne isInternetSong
-    ldr r0, = bossPlayList
+    ldr r0, =virusPlayList
     b pickRandomSong
 
   isBossBattleSong:
@@ -40,10 +38,10 @@ playRandomSound:
   pop r15
 
 .pool
-virusPlayList:  // virus play list
+bossPlayList:  // virus play list
   .byte 21, 38, 41, 45, 49, 52, 55, 57 // virus battle songs
 
-bossPlayList:
+virusPlayList:
   .byte 22, 39, 42, 44, 46, 50, 53, 56  // boss battle songs
 
 internetPlayList:
